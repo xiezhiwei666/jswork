@@ -110,7 +110,7 @@
      */
     checkAll: function() {
         for (let i in this.items) {
-            this.item[i].check.checked = true;
+            this.items[i].check.checked = true;
         }
         this.updateTotal();
     },

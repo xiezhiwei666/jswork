@@ -99,12 +99,29 @@
     cursor:pointer
 }
 
+.cart-del,
+.cart-unall {
+    color: blue;
+}
+
+
+.cart-del:hover,
+.cart-unall:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .cart-bottom {
     height: 55px;
     text-align: right;
 }
 
 .cart-bottom .cart-all {
+    position: relative;
+    top:1px
+}
+
+.cart-bottom .cart-unall {
     position: relative;
     top:1px
 }
