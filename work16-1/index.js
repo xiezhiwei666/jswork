@@ -27,5 +27,8 @@ function getStyle(obj, attr) {
 }
 var obj = document.getElementById('box');
 obj.onclick = function() {
-    animate(obj, {'left':200, 'top':'50'});
+    //实现小球多次点击多次跑动
+    var top = parseInt(Math.random() * 680);
+    var left = parseInt(Math.random() * 980);
+    animate(obj, {'left':left, 'top':top});
 };
