@@ -55,12 +55,12 @@ function getRegMsg(name, tips) {
     }
     return {'reg': reg,'msg': msg};
 }
-
+//成功
 function success(obj, msg) {
    obj.className = 'success';
     obj.innerHTML = msg;
 }
-
+//失败
 function error(obj, msg) {
    obj.className = 'error';
    obj.innerHTML = msg+'，请重新输入';
