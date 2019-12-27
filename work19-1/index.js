@@ -11,7 +11,7 @@ document.getElementById('upload').onclick = function () {
         per.innerHTML = num + '%';
     };
     xhr.onreadystatechange = function () {
-        if (xhr.readyState ===XMLHttpRequest.DONE) {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
             if(xhr.status < 200 || xhr.status >= 300 && xhr.status != 304) {
                 throw new Error('文件上传失败，服务器状态异常。');
             }

@@ -13,7 +13,7 @@ function connect() {
     }
     ws.onclose = function () {
         document.getElementById('conn').disable='';
-        document.getElementById('disconn').disabled= 'disable';
+        document.getElementById('disconn').disable= 'disable';
     }
     ws.onmessage=function(event){
         let board = document.getElementById('board')
